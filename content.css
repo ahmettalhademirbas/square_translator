@@ -1,0 +1,19 @@
+#area-translator-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2147483647;
+  cursor: crosshair;
+  background: rgba(0, 0, 0, 0.05);
+  user-select: none;
+}
+
+#area-translator-box {
+  position: fixed;
+  border: 2px dashed #1a73e8; 
+  background-color: rgba(26, 115, 232, 0.15); 
+  pointer-events: none; 
+  z-index: 2147483647;
+}

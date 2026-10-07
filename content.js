@@ -1,8 +1,11 @@
+let isSelecting = false;
+let startX = 0;
+
 console.log("Alan Çevirici: Content script sayfaya başarıyla yüklendi.")
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse)=>{
-    if(message.action === "START_SELECTION"){
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.action === "START_SELECTION") {
         console.log("Seçim modu sinyali alındı!");
-        sendResponse({status:"SELECTION_INITIATED"})
+        sendResponse({ status: "SELECTION_INITIATED" })
     }
 })
