@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Alan Çevirici",
+  "version": "1.0.0",
+  "description": "Seçilen alandaki metinleri algılayıp çeviren araç.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Alanı Çevir"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
